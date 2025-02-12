@@ -54,6 +54,6 @@ code:
         digitalWrite(redLedPin, HIGH);
         ledState = 0; 
       }
-    }
-  }
-}
+      }
+      }
+      }
