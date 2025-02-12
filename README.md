@@ -1,8 +1,7 @@
 # short-circuit
 link: https://www.tinkercad.com/things/46jHcgWnatc-short-circuit-task/editel?sharecode=omA1M4OwU2XuDUKFX9UFnkbbiDyv7oQhXOQ3BbHbzbs 
 code: 
-     // C++ code
-     //
+     
 
      const int redLedPin = 2;
      const int yellowLedPin = 3;
