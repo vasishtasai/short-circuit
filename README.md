@@ -1,40 +1,40 @@
 # short-circuit
 link: https://www.tinkercad.com/things/46jHcgWnatc-short-circuit-task/editel?sharecode=omA1M4OwU2XuDUKFX9UFnkbbiDyv7oQhXOQ3BbHbzbs 
 code: 
-// C++ code
-//
+     // C++ code
+     //
 
-const int redLedPin = 2;
-const int yellowLedPin = 3;
-const int greenLedPin = 4;
-const int buttonPin = 5; 
+     const int redLedPin = 2;
+     const int yellowLedPin = 3;
+     const int greenLedPin = 4;
+     const int buttonPin = 5; 
 
 
-int buttonState = 0;
-int lastButtonState = 0;
-unsigned long previousMillis = 0;
-unsigned long ledInterval = 1000; 
-int ledState = 0; 
+     int buttonState = 0;
+     int lastButtonState = 0;
+     unsigned long previousMillis = 0;
+     unsigned long ledInterval = 1000; 
+     int ledState = 0; 
 
-void setup() {
-  pinMode(redLedPin, OUTPUT);
-  pinMode(yellowLedPin, OUTPUT);
-  pinMode(greenLedPin, OUTPUT);
-  pinMode(buttonPin, INPUT_PULLUP); 
-}
+     void setup() {
+     pinMode(redLedPin, OUTPUT);
+     pinMode(yellowLedPin, OUTPUT);
+     pinMode(greenLedPin, OUTPUT);
+     pinMode(buttonPin, INPUT_PULLUP); 
+     }
 
-void loop() {
-  unsigned long currentMillis = millis();
+     void loop() {
+     unsigned long currentMillis = millis();
   
  
-  buttonState = digitalRead(buttonPin);
+     buttonState = digitalRead(buttonPin);
 
  
-  if (buttonState == HIGH) {
-    digitalWrite(redLedPin, HIGH);  
-    digitalWrite(yellowLedPin, LOW); 
-    digitalWrite(greenLedPin, LOW);  
-  } else {
+     if (buttonState == HIGH) {
+     digitalWrite(redLedPin, HIGH);  
+     digitalWrite(yellowLedPin, LOW); 
+     digitalWrite(greenLedPin, LOW);  
+     } else {
     
     if (currentMillis - previousMillis >= ledInterval) {
       previousMillis = currentMillis;  
